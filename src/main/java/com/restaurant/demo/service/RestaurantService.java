@@ -6,6 +6,7 @@ import com.restaurant.demo.domain.Order;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class RestaurantService {
@@ -20,7 +21,7 @@ public class RestaurantService {
         this.deliveryService = deliveryService;
     }
 
-    public FoodDelivery order(Order order) {
+    public ResponseEntity<ResponseWrapper> order(List<Map<String, String>> order) {
         orderTakerService.takeOrder(order);
         List<FoodItem> foodItems = cookingService.cook(order);
         return deliveryService.deliver(order, foodItems);
