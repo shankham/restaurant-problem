@@ -1,34 +1,70 @@
 package com.restaurant.demo.domain;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public class Order {
 
-    private String orderId;
-    private List<String> dishes;
-    private String email;
+	private long id;
+    private String billNo;
+    private String menu;
+    private int quantity;
+    private String orderedTime;
 
-    public String getOrderId() {
-        return orderId;
+    public Order(String billNo, String menu, int quantity, Timestamp orderedTime) {
+        this.billNo = billNo;
+        this.menu = menu;
+        this.quantity = quantity;
+        this.orderedTime = orderedTime.toString();
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public long getId() {
+        return id;
     }
 
-    public List<String> getDishes() {
-        return dishes;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public void setDishes(List<String> dishes) {
-        this.dishes = dishes;
+    public String getBillNo() {
+        return billNo;
     }
 
-    public String getEmail() {
-        return email;
+    public void setBillNo(String billNo) {
+        this.billNo = billNo;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getMenu() {
+        return menu;
+    }
+
+    public void setMenu(String menu) {
+        this.menu = menu;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getOrderedTime() {
+        return orderedTime;
+    }
+
+    public void setOrderedTime(Timestamp orderedTime) {
+        this.orderedTime = orderedTime.toString();
+    }
+
+    @Override
+    public String toString(){
+        return "Order[" +
+                "billNo=" + getBillNo() +
+                "menu=" + getMenu() +
+                "quantity=" + getQuantity() +
+                "orderedTime=" + getOrderedTime() +
+                "]";
     }
 }
