@@ -1,0 +1,27 @@
+INSERT INTO MENU VALUES ('Menu1', 'favorite ', '', 44, 'Indian');
+INSERT INTO MENU VALUES ('Menu2', 'Best ', '', 300, 'Indian');
+INSERT INTO MENU VALUES ('Menu3', 'rtrt ', '', 380, 'Indian');
+INSERT INTO MENU VALUES ('Menu4', 'veg', '', 160, 'Indian0');
+INSERT INTO MENU VALUES ('Menu5', 'Crispy', '', 400, 'Indian');
+INSERT INTO MENU VALUES ('Menu6', 'Good', '', 550, 'Indian');
+
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('1', 'Menu1', 6, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('1', 'Menu2', 5, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('1', 'Menu3', 1, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('2', 'Menu1', 3, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('2', 'Menu6', 2, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('3', 'Menu5', 1, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+INSERT INTO CUSTOMER_ORDER (BILL_NO, MENU, QUANTITY, ORDERED_TIME, CHECKED_OUT) VALUES ('3', 'Menu6', 2, TO_DATE('25/09/2020 7:20:00', 'DD/MM/YYYY HH24:MI:SS'), 1);
+
+INSERT INTO MENU_PREPARATION VALUES ('1', 'Menu1', 'Step1 to cook Menu1,Step2 to cook Menu1,
+      Step3 to cook Menu1, Step4 to cook Menu1', 44 );
+INSERT INTO MENU_PREPARATION VALUES ('2', 'Menu2', 'Step1 to cook Menu2,Step2 to cook Menu2,
+      Step3 to cook Menu2, Step4 to cook Menu2 ', 300);
+INSERT INTO MENU_PREPARATION VALUES ('3', 'Menu3', 'Step1 to cook Menu3,Step2 to cook Menu3,
+      Step3 to cook Menu3, Step4 to cook Menu3 ', 380);
+INSERT INTO MENU_PREPARATION VALUES ('4', 'Menu4', 'Step1 to cook Menu4,Step2 to cook Menu4,
+      Step3 to cook Menu4, Step4 to cook Menu4',  160);
+INSERT INTO MENU_PREPARATION VALUES ('5', 'Menu5', 'Step1 to cook Menu5,Step2 to cook Menu5,
+      Step3 to cook Menu5, Step4 to cook Menu5', 400 );
+INSERT INTO MENU_PREPARATION VALUES ('6', 'Menu6', 'Step1 to cook Menu2,Menu6 to cook Menu6,
+      Step3 to cook Menu6, Step4 to cook Menu6',  550 );
